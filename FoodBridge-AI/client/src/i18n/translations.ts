@@ -1,0 +1,300 @@
+export type Language = 'en' | 'ta';
+
+export const translations = {
+  en: {
+    // Navbar
+    navHome: "Home",
+    navHowItWorks: "How It Works",
+    navDonors: "For Donors",
+    navNgos: "For NGOs",
+    navVolunteers: "Volunteers",
+    navImpact: "Impact",
+    navAbout: "About",
+    navLogin: "Login",
+    navRegister: "Register",
+    navDashboard: "Dashboard",
+    navLogout: "Logout",
+    ctaDonateFood: "Donate Surplus Food",
+    ctaJoinVolunteer: "Join as Volunteer",
+
+    // Hero
+    heroTitle: "Turn Surplus Food Into Shared Meals",
+    heroSubtitle: "FoodBridge AI connects hotels, restaurants, marriage halls, event organizers, NGOs and volunteers to safely rescue surplus food and deliver it to people in need.",
+    btnDonateFood: "Donate Food",
+    btnFindSupport: "Find Food Support",
+    btnBecomeVolunteer: "Become a Volunteer",
+    statMealsRescued: "Meals Rescued",
+    statFoodDonors: "Food Donors",
+    statNgoPartners: "NGO Partners",
+    statVolunteers: "Active Volunteers",
+
+    // How It Works
+    howTitle: "How It Works",
+    howDonateTitle: "1. Donate",
+    howDonateDesc: "Hotels, restaurants, and event organizers post available surplus food.",
+    howMatchTitle: "2. Match",
+    howMatchDesc: "FoodBridge AI matches with suitable nearby verified organizations.",
+    howPickupTitle: "3. Pick Up",
+    howPickupDesc: "A verified volunteer or delivery partner collects the food.",
+    howDistributeTitle: "4. Distribute",
+    howDistributeDesc: "The organization safely distributes the food to people in need.",
+
+    // Problem & Solution
+    problemTitle: "Food should feed people, not land in bins",
+    problemText: "Every day, massive quantities of delicious, edible food are thrown away at weddings, hotels, and corporate events. Meanwhile, thousands of individuals go without a single daily meal. FoodBridge AI builds the technology infrastructure to close this gap efficiently and safely.",
+    solutionTitle: "The FoodBridge Connection",
+    solutionText: "We create a secure digital bridge between food donors, local NGOs, and volunteers. Through smart location matching, real-time tracking, and automated food safety assessments, we ensure surplus food reaches the right plate at the right time.",
+
+    // Who Can Participate
+    whoTitle: "Who Can Participate?",
+    whoDonor: "Surplus Food Donors",
+    whoDonorDesc: "Hotels, wedding halls, resorts, caterers, and community event organizers with extra fresh food.",
+    whoNgo: "Verified NGOs",
+    whoNgoDesc: "Registered charities, local shelters, and hunger relief organizations equipped for distribution.",
+    whoVolunteer: "Community Volunteers",
+    whoVolunteerDesc: "Passionate individuals with vehicles who can assist with rapid transport and logistics.",
+
+    // Food Safety Disclaimer
+    safetyDisclaimerTitle: "Preliminary Food Safety Assessment",
+    safetyDisclaimerText: "FoodBridge AI provides an automated preliminary safety assessment based on donor inputs and does not replace professional food safety inspection. Food must not be distributed if there are signs of spoilage, off-odors, or contamination.",
+    safetyStatusSafe: "SAFE - Fit for Distribution",
+    safetyStatusCaution: "CAUTION - Monitor Closely",
+    safetyStatusUrgent: "URGENT REVIEW - Potential Hazard",
+    safetyStatusDoNotDistribute: "DO NOT DISTRIBUTE - Danger of Spoilage",
+
+    // Forms
+    formDonorName: "Donor Name",
+    formOrgName: "Organization / Hotel Name",
+    formCategory: "Food Category",
+    formFoodItems: "Food Items (e.g., Rice, Veg Curry, Chicken Biryani)",
+    formFoodType: "Food Type",
+    formVeg: "Vegetarian",
+    formNonVeg: "Non-Vegetarian",
+    formQuantity: "Quantity",
+    formServings: "Estimated Number of Servings",
+    formCookingDate: "Cooking Date",
+    formCookingTime: "Cooking Time",
+    formStorageCondition: "Storage Condition",
+    formStorageAmbient: "Ambient Temp (Room Temp)",
+    formStorageRefrigerated: "Refrigerated",
+    formStorageHotHolding: "Hot Holding (Warmer)",
+    formExposed: "Was the food left uncovered or exposed to open air?",
+    formReheated: "Has this food been reheated previously?",
+    formTemperature: "Temperature if available (°C)",
+    formDeadline: "Pickup Deadline",
+    formAddress: "Pickup Address",
+    formContact: "Contact Number",
+    formInstructions: "Special Instructions / Directions",
+    formFoodImage: "Food Image URL / Select File",
+    btnSubmitDonation: "Submit Food Donation",
+
+    // Dashboards Common
+    welcomeBack: "Welcome back",
+    roleDonor: "Food Donor",
+    roleNgo: "NGO Partner",
+    roleVolunteer: "Volunteer Partner",
+    roleAdmin: "System Administrator",
+
+    // Donor Dashboard
+    activeDonations: "Your Active Donations",
+    donationHistory: "Donation History",
+    noDonations: "No donations posted yet.",
+    createNewDonation: "Create New Donation",
+    btnDownloadCert: "Download Certificate",
+    priorityScore: "Priority Score",
+    statusPending: "Pending Verification",
+    statusAccepted: "NGO Accepted",
+    statusPickedUp: "Picked Up",
+    statusDelivered: "Delivered",
+    statusCompleted: "Distribution Completed",
+    statusCancelled: "Cancelled",
+
+    // NGO Dashboard
+    nearbyDonations: "Nearby Available Donations",
+    recommendedMatches: "Smart Proximity Matches",
+    acceptedDonations: "Accepted Donations",
+    btnAccept: "Accept Donation",
+    btnAssignVolunteer: "Assign Volunteer",
+    ngoCapacity: "NGO Daily Serving Capacity",
+    distanceKm: "km away",
+    servingsText: "servings",
+    deadlineText: "Deadline",
+
+    // Volunteer Dashboard
+    availablePickups: "Available Pickups Nearby",
+    activePickups: "Your Active Pickups",
+    btnStartPickup: "Start Pickup Route",
+    btnFoodCollected: "Confirm Food Collected",
+    btnConfirmDelivery: "Confirm Delivery to NGO",
+    mealsTransported: "Meals Rescued",
+    distanceTravelled: "Distance Travelled",
+
+    // Admin Dashboard
+    adminConsole: "Admin Console",
+    usersOverview: "Users Management",
+    verifyPending: "Pending Verification Reviews",
+    recentActivity: "Recent System Activity",
+    btnVerify: "Approve Verification",
+    btnSuspend: "Suspend Account",
+    systemLogs: "System Audit Logs",
+
+    // FAQs
+    faqTitle: "Frequently Asked Questions",
+    faqQ1: "What is FoodBridge AI?",
+    faqA1: "FoodBridge AI is a digital platform that reduces food wastage by bridging surplus food from events and restaurants with NGOs who distribute it to those in need.",
+    faqQ2: "How is food safety verified?",
+    faqA2: "We run a preliminary food safety estimation engine analyzing cooking time, storage temperature, and exposure. However, visual and olfactory checks at pickup remain mandatory.",
+    faqQ3: "Who can register as a donor?",
+    faqA3: "Hotels, wedding halls, caterers, corporate campuses, and community groups can easily register and post surplus food.",
+    faqQ4: "Can volunteers join without a vehicle?",
+    faqA4: "While having a vehicle (two-wheeler or car) is highly recommended for prompt delivery, volunteers can also help coordinate distribution centers locally."
+  },
+  ta: {
+    // Navbar
+    navHome: "முகப்பு",
+    navHowItWorks: "இது எவ்வாறு செயல்படுகிறது",
+    navDonors: "கொடையாளர்களுக்கு",
+    navNgos: "அறக்கட்டளைகளுக்கு (NGO)",
+    navVolunteers: "தொண்டர்கள்",
+    navImpact: "தாக்கம்",
+    navAbout: "எங்களைப் பற்றி",
+    navLogin: "உள்நுழை",
+    navRegister: "பதிவு செய்",
+    navDashboard: "டாஷ்போர்டு",
+    navLogout: "வெளியேறு",
+    ctaDonateFood: "உணவு நன்கொடை அளிக்கவும்",
+    ctaJoinVolunteer: "தொண்டராக இணையுங்கள்",
+
+    // Hero
+    heroTitle: "மீதமுள்ள உணவை பகிர்ந்த உணவாக மாற்றுங்கள்",
+    heroSubtitle: "உணவுப் பாலம் AI ஆனது ஹோட்டல்கள், உணவகங்கள், திருமண மண்டபங்கள், தொண்டு நிறுவனங்கள் மற்றும் தன்னார்வலர்களை இணைத்து கூடுதல் உணவைப் பாதுகாப்பாக மீட்டு ஏழைகளுக்கு வழங்குகிறது.",
+    btnDonateFood: "உணவு நன்கொடை அளிக்கவும்",
+    btnFindSupport: "உணவு உதவி பெறுக",
+    btnBecomeVolunteer: "தொண்டராக மாறுங்கள்",
+    statMealsRescued: "மீட்கப்பட்ட உணவுகள்",
+    statFoodDonors: "உணவு கொடையாளர்கள்",
+    statNgoPartners: "தொண்டு நிறுவனங்கள்",
+    statVolunteers: "செயலில் உள்ள தொண்டர்கள்",
+
+    // How It Works
+    howTitle: "இது எவ்வாறு செயல்படுகிறது",
+    howDonateTitle: "1. நன்கொடை",
+    howDonateDesc: "ஹோட்டல்கள் மற்றும் திருமண மண்டபங்கள் தங்களின் உபரி உணவை பதிவேற்றுகின்றன.",
+    howMatchTitle: "2. பொருத்தம்",
+    howMatchDesc: "உணவுப் பாலம் AI அருகிலுள்ள சரிபார்க்கப்பட்ட தொண்டு நிறுவனங்களுடன் ஒப்பிடுகிறது.",
+    howPickupTitle: "3. சேகரிப்பு",
+    howPickupDesc: "சரிபார்க்கப்பட்ட தொண்டர் உணவைச் சேகரித்து எடுத்துச் செல்கிறார்.",
+    howDistributeTitle: "4. விநியோகம்",
+    howDistributeDesc: "தொண்டு நிறுவனம் பாதுகாப்பாக பசித்த மக்களுக்கு உணவை விநியோகிக்கிறது.",
+
+    // Problem & Solution
+    problemTitle: "உணவு குப்பையில் அல்ல, மக்களின் வயிற்றில் செல்ல வேண்டும்",
+    problemText: "தினமும் திருமணங்கள் மற்றும் ஹோட்டல்களில் பெருமளவிலான சுவையான உணவு வீணடிக்கப்படுகிறது. அதே வேளையில், ஆயிரக்கணக்கான மக்கள் உணவின்றி தவிக்கிறார்கள். இதைத் தடுக்கவே உணவுப் பாலம் AI தொழில்நுட்பத்தை உருவாக்குகிறது.",
+    solutionTitle: "உணவுப் பாலம் இணைப்பு",
+    solutionText: "உணவு கொடையாளர்கள், தொண்டு நிறுவனங்கள் மற்றும் தொண்டர்களுக்கிடையே ஒரு பாதுகாப்பான டிஜிட்டல் பாலத்தை உருவாக்குகிறோம். இருப்பிடப் பொருத்தம் மற்றும் பாதுகாப்பு மதிப்பீடுகள் மூலம் உணவு சரியான நேரத்தில் விநியோகிக்கப்படுவதை உறுதி செய்கிறோம்.",
+
+    // Who Can Participate
+    whoTitle: "யாரெல்லாம் பங்கேற்கலாம்?",
+    whoDonor: "உணவு கொடையாளர்கள்",
+    whoDonorDesc: "கூடுதல் உணவு உள்ள ஹோட்டல்கள், திருமண மண்டபங்கள், கேட்டரிங் அமைப்பாளர்கள்.",
+    whoNgo: "சரிபார்க்கப்பட்ட தொண்டு நிறுவனங்கள்",
+    whoNgoDesc: "உணவு விநியோகம் செய்ய தகுதியுள்ள பதிவு செய்யப்பட்ட அறக்கட்டளைகள் மற்றும் காப்பகங்கள்.",
+    whoVolunteer: "சமூகத் தன்னார்வலர்கள்",
+    whoVolunteerDesc: "உணவை விரைவாக எடுத்துச் செல்ல உதவக்கூடிய வாகனம் கொண்ட ஆர்வலர்கள்.",
+
+    // Food Safety Disclaimer
+    safetyDisclaimerTitle: "உணவு பாதுகாப்பு பூர்வாங்க மதிப்பீடு",
+    safetyDisclaimerText: "உணவுப் பாலம் AI ஆனது வழங்கப்பட்ட தரவுகளின் அடிப்படையில் ஆரம்பகட்ட பாதுகாப்பு மதிப்பீட்டை மட்டுமே வழங்குகிறது. உணவு கெட்டுப்போயிருந்தாலோ அல்லது துர்நாற்றம் வீசினாலோ விநியோகிக்கக் கூடாது.",
+    safetyStatusSafe: "பாதுகாப்பானது - விநியோகிக்கலாம்",
+    safetyStatusCaution: "கவனம் தேவை - உன்னிப்பாகக் கவனிக்கவும்",
+    safetyStatusUrgent: "அவசர ஆய்வு தேவை - ஆபத்து இருக்கலாம்",
+    safetyStatusDoNotDistribute: "விநியோகிக்க வேண்டாம் - கெட்டுப்போகும் அபாயம்",
+
+    // Forms
+    formDonorName: "கொடையாளர் பெயர்",
+    formOrgName: "நிறுவனம் / ஹோட்டல் பெயர்",
+    formCategory: "உணவு வகை",
+    formFoodItems: "உணவு பொருட்கள் (எ.கா. சாதம், சாம்பார், பிரியாணி)",
+    formFoodType: "சைவம் / அசைவம்",
+    formVeg: "சைவம்",
+    formNonVeg: "அசைவம்",
+    formQuantity: "அளவு",
+    formServings: "சாப்பிடக்கூடிய நபர்களின் எண்ணிக்கை",
+    formCookingDate: "சமைத்த தேதி",
+    formCookingTime: "சமைத்த நேரம்",
+    formStorageCondition: "உணவு சேமிப்பு நிலை",
+    formStorageAmbient: "சாதாரண அறை வெப்பநிலை",
+    formStorageRefrigerated: "குளிரூட்டப்பட்டது (Fritch)",
+    formStorageHotHolding: "சூடாக வைக்கப்பட்டுள்ளது",
+    formExposed: "உணவு காற்றில் திறந்த நிலையில் வைக்கப்பட்டிருந்ததா?",
+    formReheated: "இந்த உணவு ஏற்கனவே மீண்டும் சூடாக்கப்பட்டதா?",
+    formTemperature: "வெப்பநிலை அளவீடு (கிடைத்தால்) (°C)",
+    formDeadline: "எடுத்துக்கொள்ள வேண்டிய கடைசி நேரம்",
+    formAddress: "உணவு இருக்கும் முகவரி",
+    formContact: "தொடர்பு எண்",
+    formInstructions: "சிறப்பு குறிப்புகள் / வழிகாட்டுதல்",
+    formFoodImage: "உணவு புகைப்படம்",
+    btnSubmitDonation: "உணவு நன்கொடையை சமர்ப்பிக்கவும்",
+
+    // Dashboards Common
+    welcomeBack: "மீண்டும் வருக",
+    roleDonor: "உணவு கொடையாளர்",
+    roleNgo: "தொண்டு நிறுவனம்",
+    roleVolunteer: "தொண்டர்",
+    roleAdmin: "கணினி நிர்வாகி",
+
+    // Donor Dashboard
+    activeDonations: "உங்களது தற்போதைய நன்கொடைகள்",
+    donationHistory: "நன்கொடை வரலாறு",
+    noDonations: "நன்கொடைகள் ஏதும் இதுவரை பதிவிடப்படவில்லை.",
+    createNewDonation: "புதிய நன்கொடை உருவாக்கு",
+    btnDownloadCert: "சான்றிதழ் பதிவிறக்கம்",
+    priorityScore: "முன்னுரிமை எண்",
+    statusPending: "சரிபார்ப்புக்கு காத்திருக்கிறது",
+    statusAccepted: "அறக்கட்டளை ஏற்றுக்கொண்டது",
+    statusPickedUp: "எடுத்துச் செல்லப்பட்டது",
+    statusDelivered: "ஒப்படைக்கப்பட்டது",
+    statusCompleted: "விநியோகம் நிறைவடைந்தது",
+    statusCancelled: "ரத்து செய்யப்பட்டது",
+
+    // NGO Dashboard
+    nearbyDonations: "அருகிலுள்ள கிடைக்கும் நன்கொடைகள்",
+    recommendedMatches: "அருகிலுள்ள சிறந்த பரிந்துரைகள்",
+    acceptedDonations: "ஏற்றுக்கொள்ளப்பட்ட நன்கொடைகள்",
+    btnAccept: "ஏற்கவும்",
+    btnAssignVolunteer: "தொண்டரை நியமிக்கவும்",
+    ngoCapacity: "அறக்கட்டளையின் தினசரி உணவுத் திறன்",
+    distanceKm: "கி.மீ தூரத்தில்",
+    servingsText: "நபர்களுக்கு",
+    deadlineText: "முடிவு நேரம்",
+
+    // Volunteer Dashboard
+    availablePickups: "அருகிலுள்ள உணவு சேகரிப்பு கோரிக்கைகள்",
+    activePickups: "செயலில் உள்ள சேகரிப்புகள்",
+    btnStartPickup: "சேகரிப்பைத் தொடங்கு",
+    btnFoodCollected: "உணவு சேகரிக்கப்பட்டதை உறுதி செய்",
+    btnConfirmDelivery: "தொண்டு நிறுவனத்திடம் ஒப்படைத்ததை உறுதி செய்",
+    mealsTransported: "மீட்கப்பட்ட உணவுகள்",
+    distanceTravelled: "கடந்த தூரம்",
+
+    // Admin Dashboard
+    adminConsole: "நிர்வாகக் குழு",
+    usersOverview: "பயனர் மேலாண்மை",
+    verifyPending: "சரிபார்ப்பு கோரிக்கைகள்",
+    recentActivity: "சமீபத்திய நடவடிக்கைகள்",
+    btnVerify: "சரிபார்ப்பை அங்கீகரி",
+    btnSuspend: "கணக்கை நிறுத்தி வை",
+    systemLogs: "கணினி தணிக்கை பதிவுகள்",
+
+    // FAQs
+    faqTitle: "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+    faqQ1: "உணவுப் பாலம் AI என்றால் என்ன?",
+    faqA1: "உணவுப் பாலம் AI என்பது வீணாகும் உபரி உணவுகளை உணவின்றி தவிக்கும் ஏழைகளுக்கு அறக்கட்டளைகள் மூலமாக கொண்டு சேர்க்கும் ஒரு தொழில்நுட்ப தளமாகும்.",
+    faqQ2: "உணவின் பாதுகாப்பு எவ்வாறு உறுதி செய்யப்படுகிறது?",
+    faqA2: "சமைத்த நேரம், சேமிப்பு வெப்பநிலை ஆகியவற்றின் அடிப்படையில் ஒரு ஆரம்பகட்ட பாதுகாப்பு மதிப்பீட்டை செய்கிறோம். எனினும் எடுத்துச் செல்லும்போது நேரடியாக சோதிப்பது அவசியம்.",
+    faqQ3: "யாரெல்லாம் கொடையாளராக இணையலாம்?",
+    faqA3: "ஹோட்டல்கள், திருமண மண்டபங்கள், சமையல் கலைஞர்கள் மற்றும் சமூக விழா அமைப்பாளர்கள் கொடையாளராக எளிதில் இணையலாம்.",
+    faqQ4: "வாகனம் இல்லாத தன்னார்வலர்கள் இணையலாமா?",
+    faqA4: "வாகனம் உள்ளவர்கள் விரைவாக உணவை கொண்டு சேர்க்க முடியும் என்றாலும், மற்றவர்களும் விநியோகப் பணிகளை ஒருங்கிணைக்க உதவலாம்."
+  }
+};
